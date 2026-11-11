@@ -1,0 +1,21 @@
+{
+  "name": "Contador GTA VI",
+  "short_name": "GTA VI",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#17102b",
+  "theme_color": "#17102b",
+  "icons": [
+    {
+      "src": "/static/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
