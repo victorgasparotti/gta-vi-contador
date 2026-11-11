@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17102b">
+  <meta name="description" content="Contagem regressiva para GTA VI.">
+  <title>GTA VI — A contagem começou</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="scene">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <span class="top-label">VICE CITY · FLORIDA</span>
+      <span class="status"><i></i> CONTAGEM ATIVA</span>
+    </header>
+
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow"><span></span> O próximo capítulo começa em</p>
+
+      <h1 id="title" class="visually-hidden">Grand Theft Auto VI</h1>
+
+      <img
+        class="game-logo"
+        src="{{ url_for('static', filename='images/logo-gta-vi.png') }}"
+        alt="Grand Theft Auto VI"
+        fetchpriority="high"
+      >
+
+      <p class="subtitle">A espera está quase no fim.</p>
+
+      <div class="countdown" role="timer" aria-live="off" aria-label="Contagem regressiva para GTA VI">
+        <div class="time-unit">
+          <span class="number" id="days">000</span>
+          <span class="unit">DIAS</span>
+        </div>
+        <span class="separator">:</span>
+
+        <div class="time-unit">
+          <span class="number" id="hours">00</span>
+          <span class="unit">HORAS</span>
+        </div>
+        <span class="separator">:</span>
+
+        <div class="time-unit">
+          <span class="number" id="minutes">00</span>
+          <span class="unit">MIN</span>
+        </div>
+        <span class="separator">:</span>
+
+        <div class="time-unit">
+          <span class="number" id="seconds">00</span>
+          <span class="unit">SEG</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>PREPARE-SE PARA VOLTAR A VICE CITY</span>
+      <span>ROCKSTAR GAMES</span>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</body>
+</html>
